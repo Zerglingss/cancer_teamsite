@@ -155,3 +155,9 @@ frontend/dist/
 
 # Windows
 Thumbs.db
+
+# Docker Settings and ENV vars
+docker-compose.yml
+
+# Random Windows .Identifier files
+*Zone.Identifier
