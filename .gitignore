@@ -156,4 +156,4 @@ frontend/dist/
 # Windows
 Thumbs.db
 
-noup.txt
+docker-compose.yml
