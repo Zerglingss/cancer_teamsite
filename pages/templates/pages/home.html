@@ -6,4 +6,13 @@
 <h1>Welcome to the Home Page</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p>Your lucky number: {{ rand_int }}</p>
+
+<!-- This should be the proper way to access the discord URL, but it doesn't work at the moment -->
+<a href="{% url 'social:begin' 'discord' %}?next={{ request.path }}">Login with Discord! (Generated)</a>
+<br><br>
+
+<!-- Hard-coded URL, wrong but it works -->
+<a href="https://discord.com/oauth2/authorize?client_id=1368905412526735453&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth%2Fcomplete%2Fdiscord%2F&scope=identify+email">Login with Discord! (Hardcoded)</a>
+
+
 {% endblock %}
