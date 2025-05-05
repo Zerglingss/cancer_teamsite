@@ -1,3 +1,4 @@
 Django>=4.2
 django-ratelimit==3.0.1
 django-tailwind==3.5.0
+social-auth-app-django
